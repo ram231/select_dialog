@@ -1,7 +1,8 @@
 # select_dialog Package
 
+> Note: this package is just a fork to make barrierDismissable set to a boolean value.
+> Please Read the simple example in the code below
 Package designed to select an item from a list, with the option to filter and even search the items online.
-
 <img src="https://github.com/davidsdearaujo/select_dialog/blob/master/screenshots/Screenshot_1.png?raw=true" width="49.5%" /> <img src="https://github.com/davidsdearaujo/select_dialog/blob/master/screenshots/Screenshot_2.png?raw=true" width="49.5%" />
 
 ## pubspec.yaml
@@ -22,6 +23,7 @@ SelectDialog.showModal<String>(
   context,
   label: "Simple Example",
   selectedValue: ex1,
+  barrierDismissable: false, /// Prevents user to dismiss outside the dialog
   items: List.generate(50, (index) => "Item $index"),
   onChange: (String selected) {
     setState(() {

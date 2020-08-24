@@ -70,9 +70,11 @@ class SelectDialog<T> extends StatefulWidget {
     BoxConstraints constraints,
     bool autofocus = false,
     bool alwaysShowScrollBar = false,
+    bool barrierDismissable = true,
   }) {
     return showDialog(
       context: context,
+      barrierDismissible: barrierDismissable,
       builder: (context) {
         return AlertDialog(
           backgroundColor: backgroundColor,
