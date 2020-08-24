@@ -5,17 +5,21 @@
 Package designed to select an item from a list, with the option to filter and even search the items online.
 <img src="https://github.com/davidsdearaujo/select_dialog/blob/master/screenshots/Screenshot_1.png?raw=true" width="49.5%" /> <img src="https://github.com/davidsdearaujo/select_dialog/blob/master/screenshots/Screenshot_2.png?raw=true" width="49.5%" />
 
-## pubspec.yaml
-```yaml
-select_dialog: <last version>
-```
 
-## import
+## Steps to follow:
+
+## 1. Add the forked package from github in your pubspec.yaml
+```yaml
+select_dialog:
+  git:
+    url:  https://github.com/ram231/select_dialog.git
+```
+## 2. import
 ```dart
 import 'package:select_dialog/select_dialog.dart';
 ```
 
-## simple example
+## 3. simple example
 ```dart
 String ex1 = "No value selected";
 
